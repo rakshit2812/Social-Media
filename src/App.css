@@ -1,0 +1,49 @@
+.App{
+  display: flex;
+}
+.content{
+  width: 100%;
+}
+
+.my-card{
+  margin: 25px 60px;
+}
+
+.my-badge{
+  margin: 10px 5px 0px 5px;
+}
+
+.my-alert{
+  font-weight: 500;
+}
+
+.delete-bttn{
+  cursor: pointer;
+}
+
+.create-post{
+  width: 80%;
+  margin: 3% 0px 0px 7%;
+}
+
+label{
+  font-weight: 500;
+}
+.mysidebar{
+  width: 207px;
+  height: 100%;
+}
+
+.myfooter{
+  margin-top: 95px !important;
+}
+
+.myspinner{
+  margin: 270px 0 270px 0;
+}
+
+@media only screen and (max-width: 610px) {
+  .mysidebar{
+    display: none !important;
+  }
+}
