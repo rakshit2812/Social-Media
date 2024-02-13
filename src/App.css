@@ -32,6 +32,11 @@ label{
 .mysidebar{
   width: 207px;
   height: 100%;
+  background-color: black !important;
+}
+
+.mynavbar{
+  background-color: black !important;
 }
 
 .myfooter{
