@@ -1,9 +1,12 @@
 import React, { useContext, useRef } from 'react'
 import { PostListContext } from '../context/store';
+import { useNavigate } from 'react-router-dom';
 
-export default function CreatePost({SetselectedTab}) {
+export default function CreatePost() {
 
   const {addPost} = useContext(PostListContext)
+
+  const navigate = useNavigate();
   
   const emailElement = useRef();
   const postIDElement = useRef();
@@ -23,7 +26,7 @@ export default function CreatePost({SetselectedTab}) {
     const hashtags = hashtagsElement.current.value.split(' ');
 
     addPost(email, userid, posttitle, postbody, reactions, hashtags);
-    SetselectedTab("home");
+    navigate("/");
   }
 
   return (

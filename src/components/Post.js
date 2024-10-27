@@ -24,7 +24,7 @@ export default function Post({ POST }) {
           ))}
         </div>
         <div className="alert alert-success my-alert" role="alert" style={{margin : '10px 20px 20px 20px'}}>
-          This post has been reacted by {POST.reactions} people.
+          This post has been reacted by {POST.reactions.likes} people.
         </div>
       </div>
     </div>
